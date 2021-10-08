@@ -18,7 +18,7 @@ public interface PurchaseDetailsDAO {
     
     public Integer update(PurchaseDetails purchaseDetail);
     
-    public Integer delete(PurchaseDetails purchaseDetail);
+    public Integer delete(Integer purchaseDetailID);
     
     public List<PurchaseDetails> getAll();
 }
