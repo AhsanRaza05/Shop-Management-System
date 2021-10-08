@@ -3,21 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Products.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Purchase.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/daoimpl/PurchaseDAOImpl.java</file>
+            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/dbconnection/DataBaseConnection.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Category.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/module-info.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Sale.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/SaleDetails.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Customer.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/daoimpl/CustomerDAOImpl.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/dao/CustomerDAO.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Products.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/dbconnection/DataBaseConnection.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/daoimpl/SaleDAOImpl.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/dao/SaleDetailsDAO.java</file>
             <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/model/Company.java</file>
-            <file>file:/C:/Users/Ahsan/Documents/NetBeansProjects/Shop%20Management%20System/src/com/shopmanagementsystem/daoimpl/CompanyDAOImpl.java</file>
         </group>
     </open-files>
 </project-private>
