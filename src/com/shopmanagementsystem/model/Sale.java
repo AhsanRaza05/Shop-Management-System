@@ -13,15 +13,9 @@ public class Sale {
     
     private Integer id;
     
-    private Customer customer;
-    
-    // TO DO: ASK From Sir about how should I deal with time Api
+    private Customer customer;  
     private LocalDate purchaseDate;
-    
-    // TO DO : Convert it into BigDecimal After asking from sir.
     private Double grandTotal;
-    
-    // TO DO: Confirm it from sir that is It should be String or Integer in java
     private String saleCode;
 
     public Sale(Integer id, Customer customer, LocalDate purchaseDate, Double grandTotal, String saleCode) {

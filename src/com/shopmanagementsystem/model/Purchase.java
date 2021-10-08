@@ -14,16 +14,9 @@ import java.time.LocalDate;
 public class Purchase {
     
     private Integer id;
-    
-    // TO DO: ASK From Sir about how should I deal with time Api
     private LocalDate purchaseDate;
-    
-    // TO DO : Convert it into BigDecimal After asking from sir.
     private Double grandTotal;
-    
-    // TO DO: Confirm it from sir that is It should be String or Integer in java
     private String purchaseCode;
-    
     private Company company;
 
     public Purchase(Integer id, Company company, LocalDate purchaseDate, Double grandTotal, String purchaseCode) {

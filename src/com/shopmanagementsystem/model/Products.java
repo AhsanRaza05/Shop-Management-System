@@ -14,13 +14,8 @@ public class Products {
     private Integer id;
     private String name;
     private Integer quantity;
-    
-    // TO DO : Convert it into BigDecimal After asking from sir.
     private Double sellingPrice;
-    
-    // TO DO : Convert it into BigDecimal After asking from sir.
     private Double purchase_price;
-    
     // Category Object
     private Category category;
 
