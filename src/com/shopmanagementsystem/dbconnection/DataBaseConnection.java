@@ -22,7 +22,7 @@ public class DataBaseConnection {
         try {
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbctask","root","root");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopmanagementsystem","root","root");
             
         } catch (ClassNotFoundException ex) {
             //Logger.getLogger(DataBaseConnection.class.getName()).log(Level.SEVERE, null, ex);

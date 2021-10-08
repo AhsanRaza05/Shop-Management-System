@@ -5,6 +5,7 @@
  */
 package com.shopmanagementsystem.model;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 /**
  *
  * @author Ahsan
@@ -49,6 +50,11 @@ public class Sale {
     }
 
     public LocalDate getPurchaseDate() {
+        
+         //String s = purchaseDate.format((DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+         //System.out.println(s);
+         //return LocalDate.parse(s);
+        //return (LocalDate.parse(purchaseDate.toString(), DateTimeFormatter.ofPattern("dd-MM-yyyy")));
         return purchaseDate;
     }
 
