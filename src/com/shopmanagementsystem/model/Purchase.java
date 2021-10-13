@@ -11,7 +11,7 @@ import java.time.LocalDate;
  *
  * @author Ahsan
  */
-public class Purchase {
+public class Purchase extends DataBaseCommonColumns{
     
     private Integer id;
     private LocalDate purchaseDate;
@@ -19,13 +19,21 @@ public class Purchase {
     private String purchaseCode;
     private Company company;
 
+    public Purchase(Integer id, LocalDate purchaseDate, Double grandTotal, String purchaseCode, Company company, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.purchaseDate = purchaseDate;
+        this.grandTotal = grandTotal;
+        this.purchaseCode = purchaseCode;
+        this.company = company;
+    }
+    
     public Purchase(Integer id, Company company, LocalDate purchaseDate, Double grandTotal, String purchaseCode) {
         this.id = id;
         this.purchaseDate = purchaseDate;
         this.grandTotal = grandTotal;
         this.purchaseCode = purchaseCode;
         //new Company()
-        
         // TODO: Replace with deep Clone Way i.e. Override the clone() in company Class
         this.company = new Company(company.getId(), company.getName(), company.getLocation(), company.getContact(), company.getEmail());
     }

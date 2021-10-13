@@ -5,17 +5,28 @@
  */
 package com.shopmanagementsystem.model;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Ahsan
  */
-public class Company {
+public class Company extends DataBaseCommonColumns{
  
     private Integer id;
     private String name;
     private String location;
     private String contact;
     private String email;
+
+    public Company(Integer id, String name, String location, String contact, String email, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.name = name;
+        this.location = location;
+        this.contact = contact;
+        this.email = email;
+    }
 
     public Company(Integer id, String name, String location, String contact, String email) {
         this.id = id;
@@ -24,7 +35,7 @@ public class Company {
         this.contact = contact;
         this.email = email;
     }
-
+    
     public String getEmail() {
         return email;
     }

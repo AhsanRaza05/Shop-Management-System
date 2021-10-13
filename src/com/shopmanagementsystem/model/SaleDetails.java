@@ -5,11 +5,13 @@
  */
 package com.shopmanagementsystem.model;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Ahsan
  */
-public class SaleDetails {
+public class SaleDetails extends DataBaseCommonColumns{
     
     private Integer id;
     private Integer quantity;
@@ -20,6 +22,15 @@ public class SaleDetails {
     // Sale Object
     private Sale sale;
 
+    public SaleDetails(Integer id, Integer quantity, Products product, Double total, Sale sale, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.quantity = quantity;
+        this.product = product;
+        this.total = total;
+        this.sale = sale;
+    }
+    
     public SaleDetails(Integer id, Integer quantity, Products product, Double total, Sale sale) {
         this.id = id;
         this.quantity = quantity;

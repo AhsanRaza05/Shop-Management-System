@@ -5,11 +5,13 @@
  */
 package com.shopmanagementsystem.model;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Ahsan
  */
-public class Products {
+public class Products extends DataBaseCommonColumns{
     
     private Integer id;
     private String name;
@@ -19,6 +21,16 @@ public class Products {
     // Category Object
     private Category category;
 
+    public Products(Integer id, String name, Integer quantity, Double sellingPrice, Double purchase_price, Category category, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.name = name;
+        this.quantity = quantity;
+        this.sellingPrice = sellingPrice;
+        this.purchase_price = purchase_price;
+        this.category = new Category(category.getId(), category.getName());
+    }
+
     public Products(Integer id, String name, Integer quantity, Double sellingPrice, Double purchase_price, Category category) {
         this.id = id;
         this.name = name;
@@ -27,6 +39,17 @@ public class Products {
         this.purchase_price = purchase_price;
         this.category = new Category(category.getId(), category.getName());
     }
+    
+    
+    /*
+    public Products(Integer id, String name, Integer quantity, Double sellingPrice, Double purchase_price, Category category) {
+        this.id = id;
+        this.name = name;
+        this.quantity = quantity;
+        this.sellingPrice = sellingPrice;
+        this.purchase_price = purchase_price;
+        this.category = new Category(category.getId(), category.getName());
+    }*/
 
     public Integer getId() {
         return id;

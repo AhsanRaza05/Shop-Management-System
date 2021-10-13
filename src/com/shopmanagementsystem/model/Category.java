@@ -5,20 +5,30 @@
  */
 package com.shopmanagementsystem.model;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Ahsan
  */
-public class Category{
+public class Category extends DataBaseCommonColumns{
     
     private Integer id;
     private String name;
-
+    
+    //Add the default constuctor in the abstract class. All model classes inherited the abstract class and add a constructor accordingly.
+            
+    public Category(Integer id, String name, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.name = name;
+    }
+    
     public Category(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
-
+    
     public String getName() {
         return name;
     }

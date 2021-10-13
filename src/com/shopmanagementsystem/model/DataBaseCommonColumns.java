@@ -19,13 +19,13 @@ public abstract class DataBaseCommonColumns {
     private Integer modifiedByUserID;
     private Boolean status;
 
-    public DataBaseCommonColumns(LocalDate createdDate, Integer createdByUserID, LocalDate modifiedDate, Integer modifiedByUserID, Boolean status) {
+    public DataBaseCommonColumns(LocalDate createdDate, Integer createdByUserID, Boolean status) {
         this.createdDate = createdDate;
         this.createdByUserID = createdByUserID;
-        this.modifiedDate = modifiedDate;
-        this.modifiedByUserID = modifiedByUserID;
         this.status = status;
-        
+    }
+
+    public DataBaseCommonColumns() {
     }
 
     public Boolean getStatus() {

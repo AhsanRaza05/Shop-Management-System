@@ -5,19 +5,29 @@
  */
 package com.shopmanagementsystem.model;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Ahsan
  */
-public class Customer {
+public class Customer extends DataBaseCommonColumns{
     
     private Integer id;
     private String name;
+
+    public Customer(Integer id, String name, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.name = name;
+    }
 
     public Customer(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
+    
+    
 
     public String getName() {
         return name;

@@ -11,7 +11,7 @@ import java.time.LocalDate;
  *
  * @author Ahsan
  */
-public class PurchaseDetails {
+public class PurchaseDetails extends DataBaseCommonColumns{
     
     private Integer id;
     private Integer quantity;
@@ -21,6 +21,15 @@ public class PurchaseDetails {
     // Purchase Object
     private Purchase purchase;
 
+    public PurchaseDetails(Integer id, Integer quantity, Products product, Double total, Purchase purchase, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.quantity = quantity;
+        this.product = product;
+        this.total = total;
+        this.purchase = purchase;
+    }
+    
     public PurchaseDetails(Integer id, Integer quantity, Products product, Double total, Purchase purchase) {
         this.id = id;
         this.quantity = quantity;
@@ -30,7 +39,7 @@ public class PurchaseDetails {
         // TODO: Replace with deep Clone Way i.e. Override the clone() in Purchase Class
         this.purchase = new Purchase(purchase.getId(), purchase.getCompany(), purchase.getPurchaseDate(), purchase.getGrandTotal(), purchase.getPurchaseCode());
     }
-
+    
     public Purchase getPurchase() {
         // TODO: Replace with deep Clone Way i.e. Override the clone() in Purchase Class
         return (new Purchase(purchase.getId(), purchase.getCompany(), purchase.getPurchaseDate(), purchase.getGrandTotal(), purchase.getPurchaseCode()));

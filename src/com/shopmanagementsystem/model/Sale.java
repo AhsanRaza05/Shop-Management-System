@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
  *
  * @author Ahsan
  */
-public class Sale {
+public class Sale extends DataBaseCommonColumns{
     
     private Integer id;
     
@@ -19,6 +19,15 @@ public class Sale {
     private Double grandTotal;
     private String saleCode;
 
+    public Sale(Integer id, Customer customer, LocalDate purchaseDate, Double grandTotal, String saleCode, LocalDate createdDate, Integer createdByUserID, Boolean status) {
+        super(createdDate, createdByUserID, status);
+        this.id = id;
+        this.customer = customer;
+        this.purchaseDate = purchaseDate;
+        this.grandTotal = grandTotal;
+        this.saleCode = saleCode;
+    }
+    
     public Sale(Integer id, Customer customer, LocalDate purchaseDate, Double grandTotal, String saleCode) {
         
         this.id = id;
