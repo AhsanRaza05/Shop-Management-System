@@ -9,7 +9,7 @@ package com.shopmanagementsystem.model;
  *
  * @author Ahsan
  */
-public class Category {
+public class Category{
     
     private Integer id;
     private String name;
