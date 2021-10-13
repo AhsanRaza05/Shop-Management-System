@@ -18,7 +18,16 @@ public abstract class DataBaseCommonColumns {
     private LocalDate modifiedDate;
     private Integer modifiedByUserID;
     private Boolean status;
-
+    
+    
+    // 3rd Constrcutor
+    public DataBaseCommonColumns(LocalDate modifiedDate, Integer modifiedByUserID) {
+        this.modifiedDate = modifiedDate;
+        this.modifiedByUserID = modifiedByUserID;
+        this.status = status;
+    }
+    
+    // 2nd Constrcutor
     public DataBaseCommonColumns(LocalDate createdDate, Integer createdByUserID, LocalDate modifiedDate, Integer modifiedByUserID, Boolean status) {
         this.createdDate = createdDate;
         this.createdByUserID = createdByUserID;
@@ -27,6 +36,7 @@ public abstract class DataBaseCommonColumns {
         this.status = status;
     }
     
+    // 1st Constrcutor
     public DataBaseCommonColumns(LocalDate createdDate, Integer createdByUserID, Boolean status) {
         this.createdDate = createdDate;
         this.createdByUserID = createdByUserID;
